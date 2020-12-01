@@ -558,7 +558,7 @@ a:focus {
 }
 
 .advantages__image {
-  /*min-height: 100vh;*/
+  min-height: 350px;*/
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -581,10 +581,23 @@ a:focus {
 
   color: #ee3b24;
 }
+.advantage-item__img{
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: center;
+  width: 100%;
+}
+
+.advantage-item__img img{
+  height: 250;
+  width: 300px;
+  margin-right: 20px;
+  border: 5px solid #ee3b24;
+}
 iframe{
   border-radius: 4%;
 }
-.advantage-btn {
+.advantage-btn, .advantage-btn__back {
     outline: 0;
     border: 1px solid #000;
     color: #333333;
@@ -597,7 +610,6 @@ iframe{
     transition: all 0.25s linear;
     text-align: center;
     border-radius: 3px;
-    margin-top: 40px;
     font-weight: 500;
     margin-bottom: 40px;
 
@@ -605,9 +617,13 @@ iframe{
 .advantage-btn__block{
   text-align: center;
 }
-.advantage-btn:hover{
+.advantage-btn__back-block{
+  text-align: center;
+}
+.advantage-btn:hover, .advantage-btn__back:hover{
   background-color: #ee3b24;
   color: #ffffff;
+  border: 1px solid #ee3b24; 
 }
 
 .footer {
@@ -739,8 +755,8 @@ iframe{
   .blog,
   .advantages__content,
   .contacts {
-    padding-top: 105px;
-    padding-bottom: 90px;
+    padding-top: 85px;
+    padding-bottom: 70px;
   }
   .about__title,
   .features__title,
@@ -796,6 +812,9 @@ iframe{
     margin-right: 15px;
     margin-left: 15px;
   }
+  .advantages__image{
+    min-height: 200px !important;
+  }
 
 }
 
@@ -818,6 +837,10 @@ iframe{
   .carousel-img__mobile{
     display: block;
   }
+  .carousel-img__mobile img{
+    width: 90%;
+    height: 200px;
+   } 
   .carousel-img__mobile{
     text-align: center;
     margin-top: 70px;
@@ -842,9 +865,9 @@ iframe{
   .header-navbar {
     background-color: rgba(1, 1, 1, 0.85);
   }
-  .advantages__image {
+  /*.advantages__image {
     display: none;
-  }
+  }*/
 }
 
 @media (max-width: 991.8px) and (min-width: 576px) {
@@ -913,6 +936,7 @@ iframe{
   .blog-item__excerpt {
     margin: 15px 0 30px;
   }
+
 }
 @media (max-width: 768px){
 .d-md-block {
@@ -978,4 +1002,8 @@ iframe{
   iframe{
     width: 100%;
   }
+  .carousel-img__mobile img{
+    width: 100%;
+    height: 200px;
+   } 
 }
