@@ -24,7 +24,6 @@
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 </head>
 <body>
-
 <header class="header">
   <nav class="header-navbar navbar fixed-top navbar-expand-lg navbar-dark navbar-body" id="header-navbar">
     <div class="container">
@@ -37,20 +36,20 @@
 
       <div class="collapse navbar-collapse justify-content-end" id="header-navbar-collapse">
         <ul class="navbar-nav">
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="index.html">Главная</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#about">О нас</a>
+            <a class="nav-link" href="index.html#about">О нас</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#features">Услуги</a>
+            <a class="nav-link" href="index.html#features">Услуги</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#gallery">Галерея</a>
+            <a class="nav-link" href="index.html#gallery">Галерея</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#blog">Отзывы</a>
+            <a class="nav-link" href="index.html#blog">Отзывы</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#advantages">Почему мы</a>
@@ -63,15 +62,15 @@
     </div>
   </nav>
 </header>
-<section class="advantages" id="advantages">
+<section class="advantages advantages__prof" id="advantages">
   <div class="container-fluid">
     <div class="row">
       <div class="advantages__image col-lg-4 сol-md-12" style="background-image: url(assets/img/gallery/logo2.png);"
            data-aos="fade" data-aos-delay="200" data-aos-duration="1000"></div>
-      <div class="advantages__content col-lg-8">
+      <div class="advantages__content col-lg-8 col-md-12">
         <div class="row">
           <div class="col">
-            <h2 class="advantages__title" data-aos="fade-up">Услуги телохранителей</h2>
+            <h1 class="advantages__title" data-aos="fade-up"><strong>Услуги телохранителей</strong></h1>
             <p class="advantages__description" data-aos="fade-up" data-aos-delay="200">
             </p>
           </div>
@@ -94,7 +93,7 @@
                 <p class="advantage-item__description"><strong>Услуги телохранителя предусматривают: </strong>изучение маршрутов клиента; составление безопасных путей передвижения; разработку запасных вариантов проездов; оценку обстановки; регулярный контроль часто посещаемых мест и проверку приближенных лиц; обеспечение защищенного входа/выхода; охрану и сопровождение клиента во время перевозки денег, ценностей или документации; ограничение доступа к субъекту; быстрое реагирование на любые изменения обстановки, в которой находится лицо; пристальное внимание во время деловых встреч и публичных выступлений.</p>
               </div>
             </div>
-            <div class="advantage-item row" data-aos="fade-up-left" data-aos-delay="600">
+            <div class="advantage-item row" data-aos="fade-up-left" data-aos-delay="500">
               <div class="advantage-item__icon col">
                 <i class="fas fa-exclamation-triangle"></i>
               </div>
@@ -102,13 +101,16 @@
                 <p class="advantage-item__description"><strong>Наши телохранители</strong> – обученные профессионалы, у которых есть практический опыт работы в специальных подразделениях либо местах проведения боевых действий. Персональные охранники знают специальные методики реагирования в различных ситуациях (опасных, непредсказуемых), владеют опытом оказания первой медицинской помощи. Имеют отличную спортивную подготовку, необходимые документы и разрешения, в том числе на ношение оружия. Личные охранники проходят регулярные проверки на профессиональную пригодность и скорость реагирования.</p>
               </div>
             </div>
-            <div class="advantage-item row" data-aos="fade-up-left" data-aos-delay="750">
+            <div class="advantage-item row" data-aos="fade-up-left" data-aos-delay="550">
               <div class="advantage-item__icon col">
                 <i class="fas fa-exclamation-triangle"></i>
               </div>
               <div class="advantage-item__caption col">
                 <p class="advantage-item__description"><strong>Водитель-телохранитель</strong> сопровождает клиента либо членов его семьи в поездках, встречах в аэропорту и на вокзале.</p>
               </div>
+            </div>
+            <div class="advantage-btn__block">
+            <button class="btn btn-danger btn-lg advantage-btn advantage-btn__block">Заказать консультацию</button>
             </div>
           </div>
         </div>
@@ -156,54 +158,8 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-12">
-          <div class="advantage-item row" data-aos="fade-up-left" data-aos-delay="300">
-            <div class="advantage-item__icon col">
-              <i class="fas fa-exclamation-triangle"></i>
-            </div>
-            <div class="advantage-item__caption col">
-              <p class="advantage-item__description"><strong>Цена на услуги телохранителя зависит от:</strong> количества людей, времени работы, дополнительных задач.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-12 advantage-btn__block">
-          <button class="btn btn-danger btn-lg advantage-btn">Заказать консультацию</button>
-           <div id="modal" class="modal">
-            <div class="modal__overlay">
-              <div class="modal__body">
-                 <form method="post" action="mail.php">
-                    <input type="hidden" name="project_name" value="Сobra">
-                    <input type="hidden" name="admin_email" value="ulianna@mail.com">
-                    <input type="hidden" name="form_subject" value="Form Subject">
-                    <div class="form-group" data-aos="fade-up" data-aos-delay="300">
-                      <input type="text" name="Name" class="form-control form-control-lg" placeholder="Ваше имя..." required>
-                    </div>
-                  <div class="form-row">
-                      <div class="col-sm-6 form-group" data-aos="fade-up-right" data-aos-duration="400" data-aos-delay="500">
-                        <input type="email" name="E-mail" class="form-control form-control-lg" placeholder="Ваш еmail..." required>
-                      </div>
-                      <div class="col-sm-6 form-group" data-aos="fade-up-left" data-aos-duration="400" data-aos-delay="650">
-                        <input type="tel" name="Phone" class="form-control form-control-lg" placeholder="Ваш номер телефона" required>
-                      </div>
-                  </div>
-                  <div class="form-group" data-aos="fade-up" data-aos-delay="800">
-                    <textarea class="form-control" placeholder="Напишите нам сообщение..." rows="7" required></textarea>
-                  </div>
-                  <div class="form-row" data-aos="fade-up" data-aos-duration="400" data-aos-delay="1000">
-                    <div class="col-sm-6 m-auto text-center">
-                      <button type="submit" class="btn btn-lg btn-block btn-outline-danger">Отправить</button>
-                    </div>
-                  </div>
-                </form>
-                <div id="close" class="close">&times;</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-        </div>
-        <div class="col-lg-12">
-          <div class="advantage-item row" data-aos="fade-up-left" data-aos-delay="300">
+         <div class="col-lg-12">
+          <div class="advantage-item row" data-aos="fade-up-left" data-aos-delay="400">
             <div class="advantage-item__icon col">
               <i class="fas fa-exclamation-triangle"></i>
             </div>
@@ -214,7 +170,7 @@
           </div>
         </div>
         <div class="col-lg-12">
-          <div class="advantage-item row" data-aos="fade-up-left" data-aos-delay="300">
+          <div class="advantage-item row" data-aos="fade-up-left" data-aos-delay="500">
             <div class="advantage-item__icon col">
               <i class="fas fa-exclamation-triangle"></i>
             </div>
@@ -235,7 +191,7 @@
           </div>
         </div>
         <div class="col-lg-12">
-          <div class="advantage-item row" data-aos="fade-up-left" data-aos-delay="300">
+          <div class="advantage-item row" data-aos="fade-up-left" data-aos-delay="600">
             <div class="advantage-item__icon col">
               <i class="fas fa-exclamation-triangle"></i>
             </div>
@@ -255,7 +211,7 @@
           </div>
         </div>
         <div class="col-lg-12">
-          <div class="advantage-item row" data-aos="fade-up-left" data-aos-delay="300">
+          <div class="advantage-item row" data-aos="fade-up-left" data-aos-delay="700">
             <div class="advantage-item__icon col">
               <i class="fas fa-exclamation-triangle"></i>
             </div>
@@ -271,6 +227,52 @@
               <p class="advantage-item__description"><strong>Ответ:</strong> Каждый кандидат в телохранители проходит обучение в нашем учебном клубе. Личный охранник регулярно отрабатывает приемы по рукопашному бою, сдает нормативы по бегу и экзамены на стрельбищах, каждый день тренируется в спортивном зале. Кроме этого, обязательным условием работы телохранителя является положительное прохождение психологического тестирования.</p>
               <p class="advantage-item__description"><strong>5 Вопрос:</strong> Машина входит в услугу вместе с водителем-охранником?</p>
               <p class="advantage-item__description"><strong>Ответ:</strong> По договоренности с клиентом возможна личная охрана в Киеве с нашим транспортным средством. Также у нас предусмотрена возможность смены служебной машины на авто заказчика, если этот вариант считается наиболее подходящим для сохранения безопасности. Детали оговариваются в каждом конкретном случае.</p>
+            </div>
+          </div>
+           <div class="advantage-btn__back-block">
+            <button class="advantage-btn__back" onclick="window.history.back()">Назад</button>
+          </div>
+        </div>
+        <div class="col-lg-12 advantage-btn__block">
+           <div id="modal" class="modal">
+            <div class="modal__overlay">
+              <div class="modal__body">
+                 <form method="post" action="mail.php">
+                    <input type="hidden" name="project_name" value="Сobra">
+                    <input type="hidden" name="admin_email" value="ulianna@mail.com">
+                    <input type="hidden" name="form_subject" value="Form Subject">
+                    <div class="form-group" data-aos="fade-up" data-aos-delay="300">
+                      <input type="text" name="Name" class="form-control form-control-lg" placeholder="Ваше имя..." required>
+                    </div>
+                  <div class="form-row">
+                      <div class="col-sm-6 form-group" data-aos="fade-up-right" data-aos-duration="400" data-aos-delay="500">
+                        <input type="email" name="E-mail" class="form-control form-control-lg" placeholder="Ваш еmail..." required>
+                      </div>
+                      <div class="col-sm-6 form-group" data-aos="fade-up-left" data-aos-duration="400" data-aos-delay="650">
+                        <input type="tel" name="Phone" class="form-control form-control-lg" placeholder="Ваш номер телефона" required>
+                      </div>
+                  </div>
+                  <select class="form-control form-group" id="mySelect">
+                    <option value="0">Услуги телохранителей</option>
+                    <option value="75000">Пультовая охрана</option>
+                    <option value="100000">Охрана объектов</option>
+                    <option value="1001">Охрана офисов</option>
+                    <option value="123">Охрана территорий мобильной группой</option>
+                    <option value="159">Сопровождение грузов</option>
+                    <option value="147">Инженерно-техническая защита</option>
+                    <option value="4565">Услуги частного детектива</option>
+                  </select>
+                  <div class="form-group" data-aos="fade-up" data-aos-delay="800">
+                    <textarea class="form-control" placeholder="Напишите нам сообщение..." rows="7" required></textarea>
+                  </div>
+                  <div class="form-row" data-aos="fade-up" data-aos-duration="400" data-aos-delay="1000">
+                    <div class="col-sm-6 m-auto text-center">
+                      <button type="submit" class="btn btn-lg btn-block btn-outline-danger">Отправить</button>
+                    </div>
+                  </div>
+                </form>
+                <div id="close" class="close">&times;</div>
+              </div>
             </div>
           </div>
         </div>
@@ -304,7 +306,7 @@
                 <input type="tel" name="Phone" class="form-control form-control-lg" placeholder="Ваш номер телефона" required>
               </div>
           </div>
-           <select class="form-control form-group" id="mySelect" data-aos="fade-up-right" data-aos-duration="400" data-aos-delay="600">
+           <select class="form-control form-group" id="mySelect2" data-aos="fade-up-right" data-aos-duration="400" data-aos-delay="600">
             <option value="0">Услуги телохранителей</option>
             <option value="75000">Пультовая охрана</option>
             <option value="100000">Охрана объектов</option>
@@ -317,7 +319,7 @@
           <div class="form-group" data-aos="fade-up" data-aos-delay="800">
             <textarea class="form-control" placeholder="Напишите нам сообщение..." rows="7" required></textarea>
           </div>
-          <div class="form-row" data-aos="fade-up" data-aos-duration="400" data-aos-delay="1000">
+          <div class="form-row" data-aos="fade-up" data-aos-duration="400" data-aos-delay="900">
             <div class="col-sm-6 m-auto text-center">
               <button type="submit" class="btn btn-lg btn-block btn-outline-danger">Отправить</button>
             </div>

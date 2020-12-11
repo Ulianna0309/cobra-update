@@ -41,16 +41,16 @@
             <a class="nav-link" href="index.html">Главная</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#about">О нас</a>
+            <a class="nav-link" href="index.html#about">О нас</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#features">Услуги</a>
+            <a class="nav-link" href="index.html#features">Услуги</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#gallery">Галерея</a>
+            <a class="nav-link" href="index.html#gallery">Галерея</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#blog">Отзывы</a>
+            <a class="nav-link" href="index.html#blog">Отзывы</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#advantages">Почему мы</a>
@@ -63,7 +63,7 @@
     </div>
   </nav>
 </header>
-<section class="advantages" id="advantages">
+<section class="advantages advantages__prof" id="advantages">
   <div class="container-fluid">
     <div class="row">
       <div class="advantages__image col-lg-4 сol-md-12" style="background-image: url(assets/img/gallery/logo2.png);"
@@ -96,14 +96,6 @@
                 По согласованию с клиентом мы определяем наилучший вариант охраны периметра объекта, включая количество постов, их расположений, графика несения службы и смены. Разрабатываем эффективные маршруты для автотранспорта на участке. В зависимости от требований заказчика, сотрудники могут нести службу как в гражданской форме, так и в камуфляжной.</p>
               </div>
             </div>
-            <div class="advantage-item row" data-aos="fade-up-left" data-aos-delay="600">
-              <div class="advantage-item__icon col">
-                <i class="fas fa-exclamation-triangle"></i>
-              </div>
-              <div class="advantage-item__caption col">
-                <p class="advantage-item__description"><strong>Материальная ответственность</strong> за вверенное имущество лежит полностью на нас.</p>
-              </div>
-            </div>
             <div class="advantage-item row" data-aos="fade-up-left" data-aos-delay="750">
               <div class="advantage-item__icon col">
                 <i class="fas fa-exclamation-triangle"></i>
@@ -116,10 +108,12 @@
             </div>
           </div>
         </div>
+        <div class="advantage-btn__block">
+          <button class="btn btn-danger btn-lg advantage-btn">Заказать консультацию</button>
+        </div>
       </div>
     </div>
      <div class="col-lg-12 advantage-btn__block">
-      <button class="btn btn-danger btn-lg advantage-btn">Заказать консультацию</button>
        <div id="modal" class="modal">
         <div class="modal__overlay">
           <div class="modal__body">
@@ -138,6 +132,16 @@
                     <input type="tel" name="Phone" class="form-control form-control-lg" placeholder="Ваш номер телефона" required>
                   </div>
               </div>
+               <select class="form-control form-group" id="mySelect">
+                  <option value="0">Услуги телохранителей</option>
+                  <option value="75000">Пультовая охрана</option>
+                  <option value="100000">Охрана объектов</option>
+                  <option value="1001">Охрана офисов</option>
+                  <option value="123">Охрана территорий мобильной группой</option>
+                  <option value="159">Сопровождение грузов</option>
+                  <option value="147">Инженерно-техническая защита</option>
+                  <option value="4565">Услуги частного детектива</option>
+                </select>
               <div class="form-group" data-aos="fade-up" data-aos-delay="800">
                 <textarea class="form-control" placeholder="Напишите нам сообщение..." rows="7" required></textarea>
               </div>
@@ -163,8 +167,7 @@
               <p class="advantage-item__description"><strong>Организация физической охраны объектов</strong> – совокупность действий и мер, направленных на сохранность имущества, защиту и поддержание порядка на предприятии, пресечение и устранение нападений, взломов, проникновений, поджогов, саботажей и намеренного причинения ущерба другими способами.</p>
             </div>
               <div class="advantage-item__img">
-                <img src="assets/img/gallery/g16.jpg" alt="advantages">  
-                <img src="assets/img/gallery/g15.jpg" alt="advantages">
+                <img src="assets/img/slides/Соbra-banner.jpg" alt="advantages">  
               </div>
             </div>
           </div>
@@ -254,8 +257,6 @@
           <button class="advantage-btn__back" onclick="window.history.back()">Назад</button>
         </div>
       </div>
-    </div>
-  </div>
 </section>
 <section class="contacts" id="contacts">
   <div class="container">
@@ -283,7 +284,7 @@
                 <input type="tel" name="Phone" class="form-control form-control-lg" placeholder="Ваш номер телефона" required>
               </div>
           </div>
-           <select class="form-control form-group" id="mySelect" data-aos="fade-up-right" data-aos-duration="400" data-aos-delay="600">
+           <select class="form-control form-group" id="mySelect2" data-aos="fade-up-right" data-aos-duration="400" data-aos-delay="600">
             <option value="0">Услуги телохранителей</option>
             <option value="75000">Пультовая охрана</option>
             <option value="100000">Охрана объектов</option>
