@@ -174,8 +174,7 @@ select{
   -webkit-transition: background-color 0.5s, padding 0.25s;
        -o-transition: background-color 0.5s, padding 0.25s;
           transition: background-color 0.5s, padding 0.25s;
-        /*  background-color: rgba(1, 1, 1, 0.85) !important;*/
-        background-color: #493018;
+          background-color: rgba(1, 1, 1, 0.85) !important;
 }
 
 .header-navbar .nav-link {
@@ -890,7 +889,6 @@ iframe{
   }
   .header-navbar {
     background-color: rgba(1, 1, 1, 0.85);
-    background: #493018;
   }
   /*.advantages__image {
     display: none;
