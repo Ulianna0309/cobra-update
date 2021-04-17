@@ -15,7 +15,7 @@ select{
   display: none;
 }
 .vh-100{
-  height: 400px !important;
+  height: 420px !important;
 }
 .navbar-body{
   background-color: rgba(1, 1, 1, 0.85) !important;
@@ -175,6 +175,7 @@ select{
        -o-transition: background-color 0.5s, padding 0.25s;
           transition: background-color 0.5s, padding 0.25s;
         /*  background-color: rgba(1, 1, 1, 0.85) !important;*/
+        background-color: #493018;
 }
 
 .header-navbar .nav-link {
@@ -333,6 +334,7 @@ a:focus {
   font-size: 24px;
   width: 250px;
   height: 70px;
+  margin-bottom: 20px;
 }
 .carousel__btn:hover{
   background: #ee3b24;
@@ -889,6 +891,7 @@ iframe{
   }
   .header-navbar {
     background-color: rgba(1, 1, 1, 0.85);
+    background: #493018;
   }
   /*.advantages__image {
     display: none;
